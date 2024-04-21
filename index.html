@@ -1,81 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Links to Websites</title>
-    <style>
-        /* CSS styles can be added here or in an external stylesheet */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f2f2f2;
-        }
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 20px;
-            text-align: center;
-        }
-        main {
-            padding: 20px;
-        }
-        .website-links {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-        .website-links li {
-            margin-bottom: 10px;
-        }
-        .website-links li a {
-            display: block;
-            padding: 10px;
-            background-color: #fff;
-            border: 1px solid #333;
-            border-radius: 5px;
-            color: #333;
-            text-decoration: none;
-            transition: background-color 0.3s ease;
-        }
-        .website-links li a:hover {
-            background-color: #333;
-            color: #fff;
-        }
-        footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 20px;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-    </style>
+    <title>Devendra's Resume</title>
 </head>
+
 <body>
+
+    <!-- <a href="https://www.google.com">Click Me</a> -->
+
     <header>
-        <h1>Links to Websites</h1>
+        <table>
+            <tr>
+                <td>
+                    <a href="https://www.github.com/devendra2689">
+                        <img style="float: left;" width="300" src="devendra.png"
+                            alt="Devendra Kumar Verma's Photo">
+                    </a>
+                </td>
+                <td>
+                    <h1>Devendra Kumar Verma</h1>
+                    <p><i>Technical Lead at Societe Generale</i></p>
+                    <p>I ❤️ Python Development and Here to guide the Coding Enthusiasts 🚀</p>
+                    
+                    <nav>
+                        <ul>
+                            <li><a href="#education">Education</a></li>
+                            <li><a href="#internships">Internships</a></li>
+                            <li><a href="#projects">Projects</a></li>
+                            <li><a href="#contactme">Connect with Me</a></li>
+                        </ul>
+                    </nav>
+
+                </td>
+            </tr>
+        </table>
+
+
+        <hr>
     </header>
 
+    <!-- Header ends -->
+
     <main>
-        <ul class="website-links">
-            <li><a href="project_portfolio.html" target="_blank"> Project portfolio</a></li>
-            <li><a href="index_devendra_tutoring.html" target="_blank"> My Tutor profile page</a></li>
-            <li><a href="https://www.example3.com" target="_blank">Website 3</a></li>
-            <li><a href="https://www.example4.com" target="_blank">Website 4</a></li>
-            <li><a href="https://www.example5.com" target="_blank">Website 5</a></li>
-            <li><a href="https://www.example6.com" target="_blank">Website 6</a></li>
-            <li><a href="https://www.example7.com" target="_blank">Website 7</a></li>
-            <li><a href="https://www.example8.com" target="_blank">Website 8</a></li>
-            <li><a href="https://www.example9.com" target="_blank">Website 9</a></li>
-            <li><a href="https://www.example10.com" target="_blank">Website 10</a></li>
-        </ul>
+
+        <section id="education">
+            <h2>Education</h2>
+            <table border="">
+                <tr>
+                    <th>Course</th>
+                    <th>Institute</th>
+                    <th>Year</th>
+                    <th>Result</th>
+                </tr>
+                <tr>
+                    <td>BTech in CSE</td>
+                    <td>RKGIT, Ghaziabad</td>
+                    <td>2010</td>
+                    <td>75%</td>
+                </tr>
+                <tr>
+                    <td>MTech in CSE</td>
+                    <td>IIT Bombay</td>
+                    <td>2018</td>
+                    <td>CGPA - 8</td>
+                </tr>
+            </table>
+        </section>
+
+        <section id="internships">
+            <h2>Internships</h2>
+            <article>
+                <p><strong>Better Butter</strong> an Indian Online Cooking Platform</p>
+                <p><i>Android Developer Intern</i></p>
+                <ul>
+                    <li>.................</li>
+                    <li>...............</li>
+                </ul>
+            </article>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <ul>
+                <li>
+                    <article>
+                        <a href="https://github.com/devendra2689/EthereumVoting">
+                            <h3>Ethereum Voting</h3>
+                        </a>
+                        <ul>
+                            <li>
+                                <p>.........................</p>
+                            </li>
+                            <li>
+                                <p>.................</p>
+                            </li>
+                        </ul>
+                    </article>
+                </li>
+                <li>
+                    <article>
+                        <h3>Shuffler</h3>
+                        <p>......................</p>
+                    </article>
+                </li>
+            </ul>
+            <hr>
+        </section>
     </main>
 
-    <footer>
-        <p>&copy; 2024 Links to Websites</p>
+    <aside>
+
+    </aside>
+
+    <!-- Main Section Ends -->
+
+    <footer id="contactme">
+        <h2 id="contact">Connect With Me</h2>
+        <p>Email: <a href="mailto:devendra2689@gmail.com">devendra2689@gmail.com</a></p>
+        <p>Github: github.com/devendra2689</p>
+        <a href="tel:+919702116733">
+            <p>9702116733</p>
+        </a>
+
+        <a href="aboutus.html">
+            <p>About Us</p>
+        </a>
+
+        <a href="#">Back To Top</a>
+
     </footer>
+
+    <br><br><br>
+
+
 </body>
+
 </html>
