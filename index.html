@@ -1,151 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Devendra's Resume</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Devendra Verma</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
+  <!-- Header -->
+  <header>
+    <nav>
+      <a href="#hero" class="logo">
+        <img src="coding_instructor.png" alt="Logo" width="106">
+      </a>
+      <ul class="nav-menu">
+        <li><a href="/">Home</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="resume.html" target="_blank">Resume</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <!-- <a href="https://www.google.com">Click Me</a> -->
+  <!-- Hero Section -->
+  <section id="hero">
+    <div class="hero-content">
+      <h1>Devendra Kumar Verma<br>Coding Instructor</h1>
+      <p>Hi, I am a Coding Instructor based in Bangalore, India. I am dedicated to helping students in learning coding through <strong>personalized coaching and support.</strong></p>
 
-    <header>
-        <table>
-            <tr>
-                <td>
-                    <a href="https://www.github.com/devendra2689">
-                        <img style="float: left;" width="300" src="devendra.png"
-                            alt="Devendra Kumar Verma's Photo">
-                    </a>
-                </td>
-                <td>
-                    <h1>Devendra Kumar Verma</h1>
-                    <p><i>Technical Lead at Societe Generale</i></p>
-                    <p>I love Python Development and Here to guide the Coding Enthusiasts </p>
-                    
-                    <nav>
-                        <ul>
-                            <li><a href="#education">Education</a></li>
-                            <li><a href="#internships">Internships</a></li>
-                            <li><a href="#projects">Projects</a></li>
-                            <li><a href="#contactme">Connect with Me</a></li>
-                        </ul>
-                    </nav>
-
-                </td>
-            </tr>
-        </table>
+    </div>
+    <img src="dev_photo.jpg" alt="Devendra Profile" class="hero-image" width="300" height="400">
+  </section>
 
 
-        <hr>
-    </header>
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form id="contact-form">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name" required>
 
-    <!-- Header ends -->
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required>
 
-    <main>
+      <label for="message">Message</label>
+      <textarea id="message" name="message" placeholder="Enter your message" required></textarea>
 
-        <section id="education">
-            <h2>Education</h2>
-            <table border="">
-                <tr>
-                    <th>Course</th>
-                    <th>Institute</th>
-                    <th>Year</th>
-                    <th>Result</th>
-                </tr>
-                <tr>
-                    <td>BTech in CSE</td>
-                    <td>RKGIT, Ghaziabad</td>
-                    <td>2010</td>
-                    <td>75%</td>
-                </tr>
-                <tr>
-                    <td>MTech in CSE</td>
-                    <td>IIT Bombay</td>
-                    <td>2018</td>
-                    <td>CGPA - 8</td>
-                </tr>
-            </table>
-        </section>
+      <button type="submit" class="btn">Submit</button>
+    </form>
+  </section>
 
-        <section id="internships">
-            <h2>Internships</h2>
-            <article>
-                <p>TCS Research, Pune</p>
-                <p><i>Extracting Sequence Diagrams from Court Judgements</i></p>
-                <ul>
-                    <li>Sequence Diagram is a knowledge representation and our project deals with extraction of this knowledge.
-This Knowledge Extraction is a step ahead than more traditional Information Extraction which deals with
-extraction of entities, relations and events. Here, not only the information is being extracted but it is also
-processed/analyzed further to populate a knowledge representation(sequence diagram)</li>
-                    <li>Extracted Entities and Relations via Sequence labeling task using Conditional Random Fields(CRF). Created
-baseline model for Events extraction using FrameNet and WordNet</li>
-                </ul>
-            </article>
-        </section>
+  <!-- Footer -->
+  <footer>
+    <div class="footer-links">
+      <a href="https://www.linkedin.com/in/devendra-verma-b13072b/" target="_blank">LinkedIn</a>
+      <a href="https://www.facebook.com/devendra.k.verma" target="_blank">Facebook</a>
+      <a href="https://www.instagram.com/wellnesscoach.devendra/" target="_blank">Instagram</a>
+    </div>
+  </footer>
 
-        <section id="projects">
-            <h2>Projects</h2>
-            <ul>
-                <li>
-                    <article>
-                        <a href="https://github.com/devendra2689/Credit_Default_Prediction">
-                            <h3>Credit Defaulter Prediction</h3>
-                        </a>
-                        <ul>
-                            <li>
-                                <p>Aim was to classify customers who are likely to default on payments, which helps in minimizing losses</p>
-                            </li>
-                            <li>
-                                <p>Applied various Machine Learning models like - KNN Classifier, SVC, Decision Trees, Neural Network</p>
-                            </li>
-                        </ul>
-                    </article>
-                </li>
-                <li>
-                    <article>
-                        <h3>Voice Sentiment Analyzer</h3>
-                        <ul>
-                            <li>
-                                <p>Designed a multimodal model to detect sentiment from audio files using OpenEAR features for speech and
-word embeddings for speech-converted text</p>
-                            </li>
-                        </ul>
-                    </article>
-                </li>
-            </ul>
-            <hr>
-        </section>
-    </main>
-
-    <aside>
-
-    </aside>
-
-    <!-- Main Section Ends -->
-
-    <footer id="contactme">
-        <h2 id="contact">Connect With Me</h2>
-        <p>Email: <a href="mailto:devendra2689@gmail.com">devendra2689@gmail.com</a></p>
-        <p>Github: github.com/devendra2689</p>
-        <a href="tel:+919702116733">
-            <p>9702116733</p>
-        </a>
-
-        <a href="aboutus.html">
-            <p>About Us</p>
-        </a>
-
-        <a href="#">Back To Top</a>
-
-    </footer>
-
-    <br><br><br>
-
-
+  <script src="scripts.js"></script>
 </body>
-
 </html>
