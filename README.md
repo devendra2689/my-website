@@ -1,2 +1,2 @@
-# resume
-My Resume
+# my-website
+My Website
